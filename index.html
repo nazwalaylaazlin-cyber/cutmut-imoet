@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Absensi Asrama Cut Meutia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Absensi Asrama Cut Meutia</h2>
+    <h4>SMA Dharma Wanita 1 Pare</h4>
+
+    <form id="absensiForm">
+
+        <label for="nama">Nama Siswi:</label>
+        <input type="text" id="nama" placeholder="Masukkan nama lengkap" required>
+
+        <label for="house">House / Kamar:</label>
+        <select id="house" required>
+            <option value="">-- Pilih House --</option>
+            <option>House Eagle</option>
+            <option>House Mantaray</option>
+            <option>House Hornbill</option>
+        </select>
+
+        <label for="status">Status Kehadiran:</label>
+        <select id="status" required>
+            <option value="">-- Pilih Status --</option>
+            <option>Hadir</option>
+            <option>Izin</option>
+            <option>Sakit</option>
+            <option>Alpa</option>
+        </select>
+
+        <button type="submit">Kirim Absensi</button>
+    </form>
+
+    <p id="successMsg" style="display:none;">Absensi berhasil dikirim!</p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
